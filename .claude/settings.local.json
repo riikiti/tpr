@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"\nimport sys\nsys.stdout.reconfigure\\(encoding='utf-8'\\)\ntry:\n    import fitz\n    doc = fitz.open\\(r'C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\\\\экзамен\\\\Экзамен ТПР 2024-25.pdf'\\)\n    for page in doc:\n        print\\(page.get_text\\(\\)\\)\nexcept ImportError:\n    print\\('PyMuPDF not installed, trying pypdf'\\)\n    from pypdf import PdfReader\n    reader = PdfReader\\(r'C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\\\\экзамен\\\\Экзамен ТПР 2024-25.pdf'\\)\n    for page in reader.pages:\n        print\\(page.extract_text\\(\\)\\)\n\")",
+      "Bash(python -c \"import docx; print\\('python-docx available'\\)\" 2>&1 || echo \"need to install\")",
+      "Bash(cd \"C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\" && python convert_to_docx.py)",
+      "Bash(ls -la \"C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\"/*.docx)",
+      "Bash(pip install:*)",
+      "Bash(python -c \"import latex2mathml.converter; print\\(latex2mathml.converter.convert\\('x^2 + y^2'\\)\\)\")"
+    ]
+  }
+}
