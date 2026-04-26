@@ -6,7 +6,12 @@
       "Bash(cd \"C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\" && python convert_to_docx.py)",
       "Bash(ls -la \"C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\"/*.docx)",
       "Bash(pip install:*)",
-      "Bash(python -c \"import latex2mathml.converter; print\\(latex2mathml.converter.convert\\('x^2 + y^2'\\)\\)\")"
+      "Bash(python -c \"import latex2mathml.converter; print\\(latex2mathml.converter.convert\\('x^2 + y^2'\\)\\)\")",
+      "Bash(pandoc --version 2>/dev/null && echo \"pandoc OK\" || echo \"pandoc NOT FOUND\"; python --version 2>/dev/null || python3 --version 2>/dev/null; pip show weasyprint 2>/dev/null | head -2; pip show reportlab 2>/dev/null | head -2)",
+      "Bash(pip show:*)",
+      "Bash(python -c \"from reportlab.pdfbase.ttfonts import TTFont; from reportlab.pdfbase import pdfmetrics; pdfmetrics.registerFont\\(TTFont\\('Arial', 'C:/Windows/Fonts/arial.ttf'\\)\\); print\\('fonts OK'\\)\")",
+      "Bash(cd \"C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\\\\примеры для защиты\\\\1-2\" && python generate_pdf.py 2>&1)",
+      "Bash(python -c \"\nimport os\npath = r'C:\\\\Users\\\\Ruslan\\\\Проекты\\\\тпр\\\\примеры для защиты\\\\1-2\\\\задания_защита_лаб1-2.pdf'\nsize = os.path.getsize\\(path\\)\nprint\\(f'PDF создан, размер: {size/1024:.1f} КБ'\\)\n\")"
     ]
   }
 }
